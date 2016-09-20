@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAffPVPhXwBkOjs5nqeTBMxAAAAAACAAAAAAAQZgAAAAEAACAAAADYBWV+bOcPIXsCC+6g4mgLAOfvyAXcNYdOA+UxKcytPwAAAAAOgAAAAAIAACAAAAC9O01TQApH2GoEYgbJs38OuJVxn1tFsEY3JPjjLfsFv4AAAAAd/vOjMy9DT6uk1lA5HMuYwKvbf+1NH5HDT64B0cFZA4FU0G7MiQPxy5a89YEpmZT21aXxs0HXBRWZ+Wd39XPrHAsceYRtGmbcniSN7VgfQO4jT+CIzYW8cHsOb9RFBCvDxFw7OcIPiDFlcZBnnYgyGeCAT34ay0WfEIJF/zOep0AAAAB9e8rr4BTtkY130FKzqMbZ+MoC3089+k0c+VBGutuc//TAxYNOIBoQjGFOFlc0hrv/DiR7t7A2FB/aMZ3v4Put</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.gear.host/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/03/2015 17:43:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/03/2015 17:43:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 03:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 21:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/SuperStrona.dll">
+      <publishTime>09/20/2016 14:43:08</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/06/2016 20:47:12</publishTime>
+    </File>
+    <File Include="MainPage.aspx">
+      <publishTime>09/20/2016 15:46:54</publishTime>
+    </File>
+    <File Include="Model1.edmx.diagram">
+      <publishTime>09/08/2016 00:47:22</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/07/2016 03:23:22</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/20/2016 03:15:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CookBookModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Przepis">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Skladnik" Relationship="Self.FK_Skladnik_Przepis" FromRole="Przepis" ToRole="Skladnik" />
+  </EntityType>
+  <EntityType Name="Skladnik">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ilosc" Type="Int32" />
+    <Property Name="Cena" Type="Int32" />
+    <Property Name="PrzepisRefId" Type="Int32" />
+    <NavigationProperty Name="Przepis" Relationship="Self.FK_Skladnik_Przepis" FromRole="Skladnik" ToRole="Przepis" />
+  </EntityType>
+  <Association Name="FK_Skladnik_Przepis">
+    <End Role="Przepis" Type="Self.Przepis" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Skladnik" Type="Self.Skladnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Przepis">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Skladnik">
+        <PropertyRef Name="PrzepisRefId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CookBookEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Przepis" EntityType="Self.Przepis" />
+    <EntitySet Name="Skladnik" EntityType="Self.Skladnik" />
+    <AssociationSet Name="FK_Skladnik_Przepis" Association="Self.FK_Skladnik_Przepis">
+      <End Role="Przepis" EntitySet="Przepis" />
+      <End Role="Skladnik" EntitySet="Skladnik" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
